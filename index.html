@@ -43,8 +43,14 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 	function draw_a() { /*this is defining the function as "draw_a"*/
   var a_canvas = document.getElementById("a"); // this is determining "a" to be the ID
   var a_context = a_canvas.getContext("2d"); // this tells the computer that the drawing is 2-Dimensional
-  a_context.fillRect(50, 25, 150, 100); // these are the points at which each corner of the rectangle will reside
+  a_context.fillRect(50, 25, 150, 100); // these are the dimensions of the rectangle
 }
+
+	fuction draw_b() {	// this tells the app the function is called draw_b
+var b_canvas = document.getElementById("b"); // this identifies the element as b
+var b_context = b_canvas.getContext("2d"); // this says the drawing is 2 dimensional
+btx.font = "30px Arial"; // this shows what font and what size the words will be
+btx.fillText("Katherine Lockman", 10, 50);// this tells it to write my name
 
 </script>
 
@@ -81,6 +87,11 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 		<!--onclick tells the site to run a function-->
 		<!-- "draw_a()" tells the site to draw a rectangle as is defined in the script portion-->
 		<!-- Draw a Rectangle is what will apear on the button-->
+	<p>	<button onclick="draw_b()">Draw my Name </button></p>
+		<!-- button tells the site that this will appear as a button -->
+		<!--onclick tells the site to run a function-->
+		<!-- "draw_ab()" tells the site to draw my name as is defined in the script portion-->
+		<!-- Draw my Name is what will apear on the button-->
 		
 		
 	<p>The following code has been developed by students and/or researchers of the Freshman Research Initiative DIY Diagnostics Stream at The University of Texas at 		Austin.  This code is shared for demonstration purposes and should not be considered a product -- it is for entertainment purposes only. Any user of this code 			does so at their own risk. Members of the DIY Stream, FRI, and The University of Texas system are not liable for anything related to this code.</p>
