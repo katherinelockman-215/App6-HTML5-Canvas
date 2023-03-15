@@ -41,22 +41,16 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 	
 	
 	function draw_a() { /*this is defining the function as "draw_a"*/
-  var a_canvas = document.getElementById("a"); // this is determining "a" to be the ID
-  var a_context = a_canvas.getContext("2d"); // this tells the computer that the drawing is 2-Dimensional
-  a_context.fillRect(50, 25, 150, 100); // these are the dimensions of the rectangle
-}
+  		var a_canvas = document.getElementById("a"); // this is determining "a" to be the ID
+  		var a_context = a_canvas.getContext("2d"); // this tells the computer that the drawing is 2-Dimensional
+  		a_context.fillRect(50, 25, 150, 100); // these are the dimensions of the rectangle
+	}
 
-	/*function draw_b() {	// this tells the app the function is called draw_b
-var b_canvas = document.getElementById("a"); // this identifies the element as a
-var b_context = b_canvas.getContext("2d"); // this says the drawing is 2 dimensional
-btx.font = "30px Arial"; // this shows what font and what size the words will be
-btx.fillText("Katherine Lockman", 10, 50);// this tells it to write my name
-	}*/
-	function draw_c() {
-	var c = document.getElementById("a");
-var ctx = c.getContext("2d");
-ctx.font = "30px Arial";
-ctx.fillText("Hello World",10,50);
+	function draw_c() {// this tells the app the function is called draw_c
+		var c = document.getElementById("a");// this puts the drawing onto the canvas with the identification of "a"
+		var ctx = c.getContext("2d");// this says the drawing is 2 dimensional
+		ctx.font = "30px Arial";// this shows what font and what size the words will be
+		ctx.fillText("Katherine Lockman",10,50);// this tells it to write my name
 	}
 
 </script>
