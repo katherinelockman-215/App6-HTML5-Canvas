@@ -41,7 +41,7 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 	
 	
 	function draw_a() { /*this is defining the function as "draw_a"*/
-  		var a_canvas = document.getElementById("a"); // this is determining "a" to be the ID
+  		var a_canvas = document.getElementById("a"); // this is determining "a" to be the ID of the canvas
   		var a_context = a_canvas.getContext("2d"); // this tells the computer that the drawing is 2-Dimensional
   		a_context.fillRect(50, 25, 150, 100); // these are the dimensions of the rectangle
 	}
@@ -58,7 +58,7 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 	}
 	function draw_image() { // this will act as the function to draw an image
 		var e = document.getElementById("a"); // this tells me to draw on canvas "a"
-		var ctx = e.getContext("2d");
+		var ctx = e.getContext("2d"); // this is telling the canvas to depict the picture 2-dimensional
 		var img = document.getElementById("DIY");// this tells me to use the image defined below as "DIY"
 		ctx.drawImage(img, 0, 0, 150, 200); // these are the parameters of teh image
 	}
