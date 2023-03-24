@@ -57,9 +57,10 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 		a.width = a.width; // this is telling me that the width is equal to the width, so nothing will be displayed, thus clearing the canvas
 	}
 	function draw_image() { // this will act as the function to draw an image
-		var e = document.getElementById("a") // this tells me to draw on canvas "a"
-		var img = e.getContext("DIY")// this tells me to use the image defined below as "DIY"
-		ctx.fillImg("DIY", 0, 0, 150, 200); // these are the parameters of teh image
+		var e = document.getElementById("a"); // this tells me to draw on canvas "a"
+		var ctx = e.getContext("2d");
+		var img = document.getElementById("DIY");// this tells me to use the image defined below as "DIY"
+		ctx.drawImage(img, 0, 0, 150, 200); // these are the parameters of teh image
 	}
 
 </script>
